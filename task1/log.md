@@ -1,5 +1,9 @@
 # Task 1
 
 ```
-code goes here
+git add .
+
+git commit -m "Mesasgwe inside "
+
+git push -u origin main
 ```
