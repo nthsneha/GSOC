@@ -1,9 +1,15 @@
 import praw
 import csv
+from dotenv import load_dotenv
+import os
 
-CID="udJjQk-xYDt5srtizFMS0w"
-CS="WQeTGncFU0tKdXK563WcNKDzhBD53w"
-UA="MyRedditBot/1.0"
+
+load_dotenv()
+
+
+CID = os.getenv("CID")
+CS = os.getenv("CS")
+UA = os.getenv("UA")
 
 reddit=praw.Reddit(
     client_id=CID,
@@ -11,10 +17,41 @@ reddit=praw.Reddit(
     user_agent=UA,
 )
 
-#print("Reddit API authenticated successfully!")
 
-subreddits=["depression", "mentalhealth", "SuicideWatch", "addiction", "SuicidalThots", "loneliness"]
-keywords=["suicidal", "depressed", "overwhelmed", "addiction help", "loneliness", "suicide", "want to kill myself"]
+subreddits = [
+    "depression", "mentalhealth", "SuicideWatch", "addiction", "SuicidalThots", "loneliness",
+    "Anxiety", "BPD", "OCD", "bipolar"]
+
+keywords = [
+    "suicidal",
+    "depressed",
+    "overwhelmed",
+    "addiction help",
+    "loneliness",
+    "suicide",
+    "want to kill myself",
+    "can't go on",
+    "life is meaningless",
+    "I'm tired of everything",
+    "nobody cares",
+    "I feel so alone",
+    "self-harm",
+    "cutting myself",
+    "I want to disappear",
+    "everything hurts",
+    "I give up",
+    "I'm broken",
+    "need help",
+    "crying every night",
+    "I hate my life",
+    "anxiety attack",
+    "panic attack",
+    "I feel empty",
+    "I want the pain to end",
+    "nobody understands me",
+    "I feel like a burden",
+    "feeling worthless"
+    ]
 
 OP_FILE= "reddit_posts.csv"
 
