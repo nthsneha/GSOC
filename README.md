@@ -31,6 +31,7 @@ Logic explained:
 - Used spaCy’s en_core_web_sm model to perform NER and identify GPE (Geo-Political Entities) and matched extracted locations using a GeoNames cache for fast lookup and disambiguation.
 - Converted place names to coordinates using Geopy and plotted an interactive Folium heatmap to visualize crisis post clusters, displaying top 5 most-mentioned locations with highest crisis-related activity.
 
-### Final Deliverables: 
-- A Python script that geocodes posts using spaCy + GeoNames + Geopy and generates a heatmap using Folium.
-- A visualization of regional distress patterns and a ranked list of the top 5 affected locations based on discussion volume.
+## Final Deliverables: 
+
+1. A Python script that geocodes posts using spaCy + GeoNames + Geopy and generates a heatmap using Folium.
+2. A visualization of regional distress patterns and a ranked list of the top 5 affected locations based on discussion volume.
