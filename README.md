@@ -1,4 +1,5 @@
-# GSOC - AI Powered Behavioral Analysis for Suicide Prevention, Substance Use and Mental Health Crisis Detection with Longitudinal Geospatial Crisis Trend Analysis.
+# AI-Powered Behavioral Analysis
+## This is a pretest for the GSOC Project - AI Powered Behavioral Analysis for Suicide Prevention, Substance Use and Mental Health Crisis Detection with Longitudinal Geospatial Crisis Trend Analysis.
 ## Key features
 1. Monitor Discussions & Sentiment
 2. Analyze Engagement Patterns
